@@ -1,5 +1,5 @@
 #select target. supported: {VD5M, D4RII, USKY, TINYFISH, AFRX, RASP}
-TARGET ?= USKY
+TARGET ?= D4RII
 
 ASFLAGS       = -g
 ROOT         := $(patsubst %/,%,$(dir $(lastword $(MAKEFILE_LIST))))
@@ -90,7 +90,8 @@ ifeq ($(wildcard .i_know_what_i_am_doing),)
 	@touch .i_know_what_i_am_doing
 endif
 
-all  : stylecheck board
+#all  : stylecheck board
+all  : board
 
 stylecheck: $(GENERIC_SRCS) $(GENERIC_HEADERS) $(ARCH_SRCS) $(ARCH_HEADERS)
 	./stylecheck/cpplint.py \

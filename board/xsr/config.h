@@ -23,7 +23,7 @@
 
 // hub telemetry input (soft serial)
 // #define HUB_TELEMETRY_ON_SBUS_UART
-// #define HUB_TELEMETRY_INVERTED 
+#define HUB_TELEMETRY_INVERTED 
 // #define PPM_INVERTED
 
 #define SBUS_USART                 USART1
@@ -40,9 +40,9 @@
 #define CC25XX_SPI_SCK_PIN          GPIO_Pin_13
 #define CC25XX_SPI_MOSI_PIN         GPIO_Pin_15
 #define CC25XX_SPI_MISO_PIN         GPIO_Pin_14
-/* 
+/*
     NOTE: CS pin is on GPIOA, PA8
-    NOTE: GDO2 pin is on GPIOA, PA11 
+    NOTE: GDO2 pin is on GPIOA, PA11
 */
 #define CC25XX_SPI_CSN_PIN          GPIO_Pin_8
 #define CC25XX_SPI_GDO2_PIN         GPIO_Pin_11
@@ -58,7 +58,7 @@
 #define CC25XX_SPI_RX_DMA_CHANNEL   DMA1_Channel2
 #define CC25XX_SPI_RX_DMA_TC_FLAG   DMA1_FLAG_TC2
 
-/* 
+/*
     XSR uses the Skyworks SE2431 range extender
     See: http:// www.skyworksinc.com/uploads/documents/SE2431L_202410J.pdf
 
@@ -74,7 +74,7 @@
     CTX (PA15) is 0 then RX LNA mode active, or 1 then tx mode
     CPS (PB3) is 0 then bypass mode is active, 1 is bypass off.
     CSD (PB4) with 1 to enable chip (0 = sleep)
-*/ 
+*/
 
 /* TODO revisit base on the above */
 #define CC25XX_ANT_SW_CTX_GPIO     GPIOC
@@ -112,8 +112,8 @@
 #define BIND_JUMPER_GPIO_CLK       RCC_APB2Periph_GPIOC
 #define BIND_JUMPER_GPIO_CLK_RCC   2
 
-/* 
-    EEPROM is connected to PA0 (SCL) and PA1 (SDA) 
+/*
+    EEPROM is connected to PA0 (SCL) and PA1 (SDA)
 
     Note that this is **NOT** an I2C port on the F1 so must use SOFT I2C
 */
@@ -147,7 +147,7 @@
 
     PB11 for RX and PB10 for TX both inverted once leaving board.
     Output Enable (OE) is PA2
-*/    
+*/
 
 
 // THIS CONFIGURES IRQ PRIORITIES - DO NOT MESS THIS UP!

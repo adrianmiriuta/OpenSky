@@ -23,8 +23,8 @@
 // #define PPM_INVERTED
 
 // hub telemetry input (soft serial if only HUB_TELEMETRY_INVERTED, sbus uart if HUB_TELEMETRY_ON_SBUS_UART)
-//#define HUB_TELEMETRY_ON_SBUS_UART
-#define HUB_TELEMETRY_INVERTED
+#define HUB_TELEMETRY_ON_SBUS_UART
+//#define HUB_TELEMETRY_INVERTED
 
 #ifdef SBUS_INVERTED
     // DEBUG is on SERVO4 output:

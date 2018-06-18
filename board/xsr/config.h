@@ -23,7 +23,7 @@
 
 // hub telemetry input (soft serial)
 // #define HUB_TELEMETRY_ON_SBUS_UART
-#define HUB_TELEMETRY_INVERTED 
+// #define HUB_TELEMETRY_INVERTED 
 // #define PPM_INVERTED
 
 #define SBUS_USART                 USART1

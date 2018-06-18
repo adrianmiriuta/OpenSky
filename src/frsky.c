@@ -36,8 +36,8 @@
 #include "sbus.h"
 
 // this will make binding not very reliable, use for debugging only!
-#define FRSKY_DEBUG_BIND_DATA 1
-#define FRSKY_DEBUG_HOPTABLE 1
+//#define FRSKY_DEBUG_BIND_DATA 1
+//#define FRSKY_DEBUG_HOPTABLE 1
 
 // hop data & config
 EXTERNAL_MEMORY uint8_t frsky_current_ch_idx;
